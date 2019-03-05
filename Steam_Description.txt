@@ -1,0 +1,27 @@
+Mod created and used by the French community RGS (Reseau Gamer & Strategy) for GPO (Great Party Online)
+
+[h1]Modifications[/h1]
+[list]
+[*] TO BE DEFINE
+[/list]
+
+[h1]Available languages[/h1]
+[list]
+[*] English
+[*] French
+[/list]
+
+[h1]Links[/h1]
+[list]
+[*] [url=http://forum.reseau-js.com/forum/501-hearts-of-iron-4-organisation-de-parties-multijoueurs-gpo/]RGS forum[/url]
+[*] [url=http://www.jeux-strategie.com/]Jeux-Strategie.com website[/url]
+[*] [url=https://github.com/NicolasGrosjean/Mod_GPO_RGS2]Mod GitHub[/url]
+[/list]
+
+[h1]Credits[/h1]
+[list]
+[*] Julien de la Normandie
+[*] Kahboom
+[*] Mouchi, new contributor for the 2.1 version
+[*] The RGS community for their ideas and feedbacks
+[/list]
