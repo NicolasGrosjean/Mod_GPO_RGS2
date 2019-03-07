@@ -1,0 +1,151 @@
+Instaling_Dependant_Government_Commonwealth = {
+	puppet_AI = {
+		target_trigger = {
+			OR = {
+				tag = ENG
+				tag = RAJ
+				tag = SAF
+				tag = CAN
+				tag = AST
+				tag = NZL
+				
+			}	
+			FROM = {
+				OR = {
+					tag = RAJ
+					tag = SAF
+					tag = CAN
+					tag = AST
+					tag = NZL
+				}
+				is_ai = yes
+				exists = yes
+				NOT = { has_autonomy_state  = autonomy_government_in_exile }
+			}
+		}
+		visible ={
+			FROM = {
+				is_ai = yes
+				exists = yes
+				NOT = { has_autonomy_state  = autonomy_government_in_exile }
+			}	
+		}
+		available  = {
+			FROM = {
+			is_ai = yes
+				exists = yes
+				NOT = { has_autonomy_state  = autonomy_government_in_exile }
+			}	
+		}
+		
+		cost = 50    
+		complete_effect = {
+			set_autonomy = { target = FROM autonomy_state = autonomy_government_in_exile } 
+		}
+	}
+	
+	annex_AI = {
+		target_trigger = {
+			OR = {
+				tag = ENG
+				tag = RAJ
+				tag = SAF
+				tag = CAN
+				tag = AST
+				tag = NZL				
+			}	
+			FROM = {
+				OR = {
+					tag = RAJ
+					tag = SAF
+					tag = CAN
+					tag = AST
+					tag = NZL
+				}
+				is_ai = yes
+				has_autonomy_state  = autonomy_government_in_exile 
+				is_subject_of = ROOT
+			}
+		}
+		visible ={
+			FROM = {
+				is_ai = yes
+				exists = yes
+				has_autonomy_state  = autonomy_government_in_exile 
+				is_subject_of = ROOT
+			}	
+		}
+		available  = {
+			FROM = {
+				is_ai = yes
+				has_autonomy_state  = autonomy_government_in_exile 
+				is_subject_of = ROOT
+			}	
+		}
+		cost = 50
+		complete_effect = {
+			annex_country = { target = FROM transfer_troops = yes }
+		}
+	}
+#### WARNING!!! this decision cause second capitulation of country giving part of its equipment to axis.
+
+	gov_in_exile = {
+		target_trigger = {
+			OR = {
+				is_ai = no
+				is_in_faction_with = ENG
+				has_war = yes
+			}	
+			FROM = {
+				is_ai = yes
+				has_capitulated = yes
+				is_in_faction_with = ROOT
+				has_war_together_with = ROOT
+				has_capitulated = yes
+				exists = yes
+				NOT = { has_autonomy_state  = autonomy_government_in_exile }
+			}
+		}
+		visible = {
+			FROM ={
+				is_ai = yes
+				has_capitulated = yes			
+				has_war_together_with = ROOT
+				has_capitulated = yes
+				exists = yes
+				NOT = { has_autonomy_state  = autonomy_government_in_exile }
+			}
+		}
+		available  = {
+			FROM = {
+				is_ai = yes
+				has_capitulated = yes
+				is_in_faction_with = ROOT
+				has_war_together_with = ROOT
+				has_capitulated = yes
+				exists = yes
+				NOT = { has_autonomy_state  = autonomy_government_in_exile }
+			}	
+		}
+		cost = 50
+		complete_effect = {
+			set_autonomy = { target = FROM autonomy_state = autonomy_government_in_exile }
+		}
+	}
+	
+#	gov_in_exile_test = {
+#		target_trigger = {
+#			tag = GER
+#			FROM = {
+#				is_ai = yes
+#				has_capitulated = yes
+#				is_in_faction_with = ENG
+#				has_capitulated = yes
+#			}
+#		}
+#		complete_effect = {
+#			ENG = {set_autonomy = { target = FROM autonomy_state = autonomy_government_in_exile }}
+#		}
+#	}
+	
+}

@@ -1,0 +1,10 @@
+﻿l_french:
+ autonomy_government_in_exile:0 "Governement En Exil"
+ Instaling_Dependant_Government_Commonwealth:0 "L'IA c'est d'la daube"
+ puppet_AI:0 "Puppetiser [From.GetName]"
+ puppet_AI_desc:0 "L'IA [From.GetName] est vraiment trop naze, il est temps de prendre les choses en main ( et de faire raler un peu Général sur les couts en pp d'annexion )"
+ annex_AI:0 "Annexer [From.GetName]"
+ annex_AI_desc:0 "Rien à faire [From.GetName] est tellement nul que pour leur bien être, il vaut mieux les annexer"
+ gov_in_exile:0 "Forcer un gouvernement en exil pour [From.GetName]"
+ gov_in_exile_desc:0 "[From.GetName] ont déja capitulé, mais faut qu'on puisse build dessus !. ATTENTION !!! Cela provoquera une seconde capitulation et donnera du matériel à l'équipe adverse"
+ 

@@ -1,0 +1,30 @@
+##########################################
+##### Government in Exile puppeting ######
+##########################################
+
+Instaling_Dependant_Government_Commonwealth = {
+	icon = generic_political_actions
+	
+}
+
+Establishing_Full_Control_Commonwealth = {
+	icon = generic_political_actions
+	visible = {
+		is_in_faction = yes
+		any_allied_country ={
+			is_ai = yes
+			OR = {
+				tag = RAJ
+				tag = SAF
+				tag = CAN
+				tag = AST
+			}
+			is_puppet_of = ROOT
+		}
+	}	
+}
+
+Establishing_Government_in_Exile = {
+
+
+}

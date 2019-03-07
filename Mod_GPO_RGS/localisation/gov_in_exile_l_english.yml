@@ -1,0 +1,9 @@
+﻿l_english:
+    autonomy_government_in_exile:0 "Government In Exile"
+    Instaling_Dependant_Government_Commonwealth:0 "The AI is not good"
+    puppet_AI:0 "Puppet [From.GetName]"
+    puppet_AI_desc:0 "The [From.GetName] IA is not good, it is time to take control again"
+    annex_AI:0 "Annex [From.GetName]"
+    annex_AI_desc:0 "Nothing to do, [From.GetName] is too bad, it is better for them to annex it"
+    gov_in_exile:0 "Force an exile government for [From.GetName]"
+    gov_in_exile_desc:0 "[From.GetName] have already surrended, but we need to build in their lands !. WARNING !!! There will be a 2nd surrending which giving materials to ennemy team"
