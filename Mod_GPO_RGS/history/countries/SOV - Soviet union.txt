@@ -76,6 +76,8 @@ if = {
 
 	add_political_power = 1198
 	
+	navy_experience = 100
+	
 	#adding ministers, already have 2 set
 	add_ideas = {
 		SOV_vyacheslav_molotov

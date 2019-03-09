@@ -123,6 +123,8 @@ give_guarantee = URG
 
 	add_political_power = 398
 	
+	navy_experience = 150
+	
 	#adding ministers
 	add_ideas = {
 		USA_robert_taft

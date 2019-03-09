@@ -301,6 +301,8 @@ set_politics = {
 
 
 1939.1.1 = {
+	navy_experience = 200
+	
 	set_politics = {
 
 		parties = {

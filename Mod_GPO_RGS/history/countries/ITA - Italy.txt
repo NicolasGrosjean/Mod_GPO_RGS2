@@ -98,6 +98,8 @@ if = {
 
 	add_political_power = 1198
 	
+	navy_experience = 150
+	
 	#white_peace = ETH
 	if = {
 		limit = {
