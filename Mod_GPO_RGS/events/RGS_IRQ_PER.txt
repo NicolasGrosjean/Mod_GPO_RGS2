@@ -1,0 +1,71 @@
+﻿#######################################
+# RGS Events about Iraq and Persia
+#######################################
+
+add_namespace = rgs
+
+# Persian capitulation
+country_event = {
+	id = rgs.1
+	title = rgs.1.t
+	desc = rgs.1.d
+	picture = GFX_news_event_italian_tank_desert
+
+	trigger = {
+		tag = PER
+		surrender_progress > 0.5
+		OR = {
+			has_war_with = ENG
+			has_war_with = SOV
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = { # Accept demands
+		name = rgs.1.a
+		SOV = {
+			transfer_state = 419
+			transfer_state = 420
+			transfer_state = 266
+		}
+		ENG = {
+			transfer_state = 412
+			transfer_state = 413
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = SOV
+				has_war_with = PER
+			}
+			white_peace = PER
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = ENG
+				has_war_with = PER
+			}
+			white_peace = PER
+		}
+		leave_faction = yes
+		news_event = { id = rgs.2 }
+	}
+}
+
+# Persian capitulation
+news_event = {
+	id = rgs.2
+	title = rgs.1.t
+	desc = rgs.1.d
+	picture = GFX_news_event_italian_tank_desert
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rgs.1.a
+	}
+}
