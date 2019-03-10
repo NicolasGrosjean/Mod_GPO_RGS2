@@ -39,6 +39,8 @@ Contact Mouchi on the forum or on Discord
 
 ## Changelog
 
+> [The modifications in the code are visible here](https://github.com/NicolasGrosjean/Mod_GPO_RGS2/compare/paradox...master)
+
 ### Global
 
 - Allow the player to puppet IA member of his faction
