@@ -7207,11 +7207,11 @@ focus_tree = {
 				type = puppet_wargoal_focus
 				expire = 0
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = PER
-				generator = { 412 413 }
-				expire = 0
+			if = {
+				limit = { NOT = { has_global_flag = sov_uk_per_war } }
+				set_global_flag = sov_uk_per_war
+				news_event = { id = rgs.5 }
+				PER = { country_event = { id = rgs.1 days = 30 } }
 			}
 			if = {
 				limit = {
@@ -7608,7 +7608,10 @@ focus_tree = {
 		} #UK at war with fascist/commie. iran is fascist/commie
 
 		bypass = {
-			PER = { exists = no }
+			OR = {
+				PER = { exists = no }
+				has_global_flag = sov_uk_per_war
+			}
 		}
 
 		will_lead_to_war_with = PER
@@ -7622,11 +7625,11 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = PER
-				generator = { 412 413 }
-				expire = 0
+			if = {
+				limit = { NOT = { has_global_flag = sov_uk_per_war } }
+				set_global_flag = sov_uk_per_war
+				news_event = { id = rgs.5 }
+				PER = { country_event = { id = rgs.1 days = 30 } }
 			}
 		}
 	}
