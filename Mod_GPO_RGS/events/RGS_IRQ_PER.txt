@@ -9,7 +9,7 @@ country_event = {
 	id = rgs.1
 	title = rgs.1.t
 	desc = rgs.1.d
-	picture = GFX_news_event_italian_tank_desert
+	picture = GFX_news_event_iran
 
 	fire_only_once = yes
 	
@@ -61,7 +61,7 @@ news_event = {
 	id = rgs.2
 	title = rgs.1.t
 	desc = rgs.1.d
-	picture = GFX_news_event_italian_tank_desert
+	picture = GFX_news_event_iran
 	
 	major = yes
 	
@@ -126,7 +126,7 @@ news_event = {
 	id = rgs.4
 	title = rgs.3.t
 	desc = rgs.3.d
-	picture = GFX_news_event_italian_tank_desert
+	picture = GFX_news_event_irak
 	
 	major = yes
 	
@@ -144,5 +144,22 @@ news_event = {
 		trigger = {
 			is_in_faction_with = ENG
 		}
+	}
+}
+
+
+# Iran invasion - news for all
+news_event = {
+	id = rgs.5
+	title = rgs.5.t
+	desc = rgs.5.d
+	picture = GFX_news_event_iran
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rgs.5.a
 	}
 }

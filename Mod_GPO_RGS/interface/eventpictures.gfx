@@ -1,0 +1,13 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_news_event_irak"
+		texturefile = "gfx/event_pictures/news_event_irak.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_iran"
+		texturefile = "gfx/event_pictures/news_event_iran.dds"
+	}
+	
+}
