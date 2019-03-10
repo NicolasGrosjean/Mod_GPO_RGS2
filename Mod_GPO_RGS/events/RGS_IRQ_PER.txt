@@ -4,13 +4,15 @@
 
 add_namespace = rgs
 
-# Persian capitulation
+# Iran capitulation - event to make peace
 country_event = {
 	id = rgs.1
 	title = rgs.1.t
 	desc = rgs.1.d
 	picture = GFX_news_event_italian_tank_desert
 
+	fire_only_once = yes
+	
 	trigger = {
 		tag = PER
 		surrender_progress > 0.5
@@ -54,7 +56,7 @@ country_event = {
 	}
 }
 
-# Persian capitulation
+# Iran capitulation - news for all
 news_event = {
 	id = rgs.2
 	title = rgs.1.t
@@ -67,5 +69,80 @@ news_event = {
 	
 	option = {
 		name = rgs.1.a
+	}
+}
+
+# End of Iraqi concessions - British event
+country_event = {
+	id = rgs.3
+	title = rgs.3.t
+	desc = rgs.3.d
+	picture = GFX_report_event_journalists_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		
+		# Athens (47) and the Crete (182) are lost
+		GRE = {
+			NOT = { controls_state = 47 }
+			NOT = { controls_state = 182 }
+		}
+		
+		# Iraq is not already at war with England or one of its subject
+		IRQ = {
+			NOT = {
+				has_war_with = ROOT
+			}
+			NOT = {
+				is_subject_of = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { # Iraq stop oil concessions
+		name = rgs.3.a
+		remove_resource_rights = 291
+		remove_resource_rights = 676
+		add_opinion_modifier = {
+			target = IRQ
+			modifier = sanctions
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = IRQ
+		}
+		news_event = { id = rgs.4 }
+	}
+}
+
+# End of Iraqi concessions - News event
+news_event = {
+	id = rgs.4
+	title = rgs.3.t
+	desc = rgs.3.d
+	picture = GFX_news_event_italian_tank_desert
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rgs.4.a
+		trigger = {
+			NOT = { is_in_faction_with = ENG }
+		}
+	}
+	
+	option = {
+		name = rgs.3.a
+		trigger = {
+			is_in_faction_with = ENG
+		}
 	}
 }
