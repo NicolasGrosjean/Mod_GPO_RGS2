@@ -1,0 +1,12 @@
+on_actions = {
+	#Not run on a specific country.
+	on_startup = {
+		effect = {
+			#Iraqian oil concessions
+			IRQ = {
+				give_resource_rights = { receiver = ENG state = 291 }
+				give_resource_rights = { receiver = ENG state = 676 }
+			}
+		}
+	}
+}
