@@ -1,6 +1,6 @@
 Mod created and used by the French community RGS (Reseau Gamer & Strategy) for GPO (Great Party Online)
 
-[h2]Version 3.0.0 compatible for HoI4 1.6.X[/h2]
+[h1]Version 3.0.0 compatible for HoI4 1.6.X[/h1]
 The version 2.1.4 for HoI4 1.5.4 is available [url=https://github.com/NicolasGrosjean/Mod_GPO_RGS/tree/master]here[/url].
 
 [h1]Global modifications[/h1]
