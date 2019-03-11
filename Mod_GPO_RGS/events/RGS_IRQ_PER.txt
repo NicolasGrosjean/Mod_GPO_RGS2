@@ -18,7 +18,6 @@ country_event = {
 	option = { # Accept demands
 		name = rgs.1.a
 		SOV = {
-			transfer_state = 419
 			transfer_state = 420
 			transfer_state = 266
 		}
