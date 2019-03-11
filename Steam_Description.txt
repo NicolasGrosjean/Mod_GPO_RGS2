@@ -21,6 +21,7 @@ The version 2.1.4 for HoI4 1.5.4 is available [url=https://github.com/NicolasGro
 [*] Aluminium prospection decision in the US bring 24 new resources (12 without the mod)
 [*] Add more building slots to the US by modifing the idea Home for Free
 [*] Siam become a Japan puppet with a Japan focus
+[*] Remove convoy DCA because it damaged planes heavily
 [/list]
 
 [h1]1939 bookmark modifications[/h1]

@@ -59,6 +59,7 @@ Contact Mouchi on the forum or on Discord
 - Aluminium prospection decision in the US bring 24 new resources (12 without the mod)
 - Add more building slots to the US by modifing the idea Home for Free
 - Siam become a Japan puppet with a Japan focus
+- Remove convoy DCA because it damaged planes heavily
 
 ### 1939
 
