@@ -547,6 +547,11 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				tag = ENG
+				has_war = no
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -1090,6 +1095,12 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				tag = ENG
+				has_war = no
+				336 = { CONTROLLER = { is_in_faction_with = ROOT } }
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -1360,6 +1371,12 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				tag = ENG
+				has_war = no
+				date < 1938.1.1
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -1553,6 +1570,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		complete_effect = {
@@ -1603,6 +1624,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -1684,6 +1709,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -1765,6 +1794,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -1846,6 +1879,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -1927,6 +1964,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2008,6 +2049,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2089,6 +2134,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2171,6 +2220,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2252,6 +2305,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2335,6 +2392,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2418,6 +2479,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2592,6 +2657,11 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				tag = ENG
+				has_war = no
+				factor = 0
+			}
 		}
 
 		remove_effect = {
